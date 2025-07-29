@@ -27,7 +27,7 @@ Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 ## Site em produção
 
 Acesse a versão online do site:
-> [https://seusite.com](https://minecraftodoluizao.netlify.app/)
+> [Clique aqui para acessar!](https://minecraftodoluizao.netlify.app/)
 
 ## Tecnologias utilizadas
 
