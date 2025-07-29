@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Downloads para jogar no servidor!</title>
+        <title>Minecraft Do Luizao</title>
         <meta name="description" content="Downloads e informações para jogar no servidor Minecraft Luizao Castor Gamers" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
