@@ -1,8 +1,9 @@
 import { useEffect, useRef } from 'react';
 
+
 interface GifAnimationConfig {
-  startX: number;
-  startY: number;
+  startX?: number;
+  startY?: number;
   width: number;
   height: number;
   speed: number;
@@ -17,9 +18,17 @@ export const useGifAnimation = (config: GifAnimationConfig) => {
 
     let screenW = window.innerWidth;
     let screenH = window.innerHeight;
-    let x = config.startX;
-    let y = config.startY;
-    
+
+    let x = typeof config.startX === 'number'
+      ? config.startX
+      : Math.floor(Math.random() * (screenW - config.width));
+    let y = typeof config.startY === 'number'
+      ? config.startY
+      : Math.floor(Math.random() * (screenH - config.height));
+
+    element.style.left = x + 'px';
+    element.style.top = y + 'px';
+
     let dx = (Math.random() > 0.5 ? 1 : -1) * config.speed;
     let dy = (Math.random() > 0.5 ? 1 : -1) * config.speed;
 
